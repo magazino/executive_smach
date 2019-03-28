@@ -49,14 +49,14 @@ smach.set_loggers(
 smach.set_shutdown_check(rospy.is_shutdown)
 
 ### Core classes
-from util import set_preempt_handler
+from .util import set_preempt_handler
 
 ### Top-level Containers / Wrappers
-from action_server_wrapper import ActionServerWrapper
-from introspection import IntrospectionClient, IntrospectionServer
+from .action_server_wrapper import ActionServerWrapper
+from .introspection import IntrospectionClient, IntrospectionServer
 
 ### State Classes
-from simple_action_state import SimpleActionState
-from service_state import ServiceState
-from monitor_state import MonitorState
-from condition_state import ConditionState
+from .simple_action_state import SimpleActionState
+from .service_state import ServiceState
+from .monitor_state import MonitorState
+from .condition_state import ConditionState
